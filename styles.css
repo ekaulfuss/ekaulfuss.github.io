@@ -1,12 +1,164 @@
 html {
-    background-color: #080F0F;
+  scroll-snap-type: y mandatory;
 }
 body {
-    background-color: #080F0F;
-  }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
-  }
+  color:#DCDCDD;
+  background-color: #080F0F;
+  font-family: 'EB Garamond', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+img {
+  max-width: 100%;
+}
+img.align-self {
+  align-self: flex-start;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+.main {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+.main .left {
+  width: 65%;
+  display: flex;
+  margin: 4%;
+}
+.main .intro {
+  font-size: 5vw;
+  font-weight:600;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.9;
+}
+.main .intro .button {
+  background-color: #007FAD;
+  height: 4vw;
+  width: 35%;
+  color: #080F0F;
+  font-size: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+.main .right {
+  display: flex;
+  width: auto;
+  height: 100%;
+  margin-right: 0%;
+  background-color: #007FAD;
+}
+.resume {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+.resume .top {
+  display: flex;
+  height: 50%;
+  min-width: auto;
+  background-color: #007FAD;
+}
+.resume .bottom {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  margin-top: 3vw;
+}
+.resume .bottom .left {
+  color:#007FAD;
+  font-size: 7vw;
+  margin-left: 2vw;
+  flex-grow: 5;
+  font-family: Courgette, sans-serif;
+}
+.resume .bottom .right {
+  color: #DCDCDD;
+  font-size: 2vw;
+  flex-grow: 5;
+  font-family: "Agdasima", sans-serif;
+}
+.apps {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+.apps .top {
+  display: flex;
+  flex-grow: 2;
+  margin: 3vw;
+  color: #007FAD;
+  font-size: 7vw;
+  font-family: Courgette, sans-serif;
+}
+.apps .bottom {
+  display: flex;
+  flex-grow: 8;
+  flex-direction: row;
+}
+.apps .bottom .demo {
+  flex-grow: 1;
+  margin: 2vw;
+  margin-right: 5vw;
+  color: #DCDCDD;
+  font-family: "Agdasima", sans-serif;
+  line-height: 1.5;
+  font-size: 2vw;
+}
+.apps .bottom .demo span {
+  color: #007FAD;
+  font-family: Courgette, sans-serif;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+.contact .top {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5vw;
+  color: #007FAD;
+  background-color: #080F0F;
+  font-family: Courgette, sans-serif;
+  font-size: 7vw;
+}
+.contact .top span {
+  color: #DCDCDD;
+  font-family: "Agdasima", sans-serif;
+  font-size: 2vw;
+}
+.contact .bottom {
+  background-color: #007FAD;
+  color: #080F0F;
+  font-family: "Agdasima", sans-serif;
+  font-size: 2vw;
+  line-height: 1.5;
+}
+.contact .bottom .item {
+  justify-content: space-around;
+  margin-left: 5vw;
+}
+.contact .bottom .item img {
+  height: 3vw;
+  width: 3vw;
+}
